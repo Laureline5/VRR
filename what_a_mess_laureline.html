@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+
+  <a-scene>
+
+   <a-assets>
+
+     <!-- eau* -->
+     <img id="eau" src="./photos/eau.jpg">
+   
+     <!-- ciel -->
+     <img id="ciel" src="./photos/ciel.jpg">
+ 
+     <!-- sable -->
+     <img id="sable" src="./photos/coraux.jpg">
+
+     <!-- shark -->
+     <a-asset-item id="obj" src="/modeles/shark/12960_Shark_v2_L1.obj"></a-asset-item>
+     <a-asset-item id="mtl" src="/modeles/shark/12960_Shark_v2_L1.mtl"></a-asset-item>
+
+     <!-- poisson -->
+     <a-asset-item id="poisson" src="/modeles/poisson/13012_Orange_Lined_Cardinalfish_v1_l3.obj"></a-asset-item>
+     <a-asset-item id="poisson2" src="/modeles/poisson/13012_Orange_Lined_Cardinalfish_v1_l3.mtl"></a-asset-item>
+
+     <!-- poissonviolet -->
+     <a-asset-item id="poissonviolet" src="/modeles/poisson_violet/13009_Coral_Beauty_Angelfish_v1_l3.obj"></a-asset-item>
+     <a-asset-item id="poissonviolet2" src="/modeles/poisson_violet/13009_Coral_Beauty_Angelfish_v1_l3.mtl"></a-asset-item>
+
+     <!-- dauphin -->
+     <a-asset-item id="dauphin" src="/modeles/dauphin/10014_dolphin_v2_max2011_it2.obj"></a-asset-item>
+     <a-asset-item id="dauphin2" src="/modeles/dauphin/10014_dolphin_v2_max2011_it2.mtl"></a-asset-item>
+
+     <!-- crabe -->
+     <a-asset-item id="crabe" src="/modeles/crabe/10012_crab_v2_iterations-1.obj"></a-asset-item>
+     <a-asset-item id="crabe2" src="/modeles/crabe/10012_crab_v2_iterations-1.mtl"></a-asset-item>
+
+     <!-- poissonjaune -->
+     <a-asset-item id="poissonjaune" src="/modeles/poissonjaune/12265_Fish_v1_L2.obj"></a-asset-item>
+     <a-asset-item id="poissonjaune2" src="/modeles/poissonjaune/12265_Fish_v1_L2.mtl"></a-asset-item>
+
+     <!-- dechat -->
+     <a-asset-item id="dechet" src="/modeles/dechet/12143_bass_fish_v1_l3.obj"></a-asset-item>
+     <a-asset-item id="dechet2" src="/modeles/dechet/12143_bass_fish_v1_l3.mtl"></a-asset-item>
+
+     <!-- tortue -->
+     <a-asset-item id="tortue" src="/modeles/10042_Sea_Turtle_V1_L3.123c708c1821-ff1e-470c-a557-b57441fbf771/tortue/10042_Sea_Turtle_V2_iterations-2.obj"></a-asset-item>
+     <a-asset-item id="tortue2" src="/modeles/10042_Sea_Turtle_V1_L3.123c708c1821-ff1e-470c-a557-b57441fbf771/tortue/10042_Sea_Turtle_V2_iterations-2.mtl"></a-asset-item>
+
+     <!-- crevette -->
+     <a-asset-item id="crevette" src="/modeles/Shrimp_v1_L3.123c1f00fa2d-d886-4c6f-84fb-f026c668c3bf/Shrimp_v1_L3.123c1f00fa2d-d886-4c6f-84fb-f026c668c3bf/10048_Shrimp_v1_L3.obj"></a-asset-item>
+     <a-asset-item id="crevette2" src="/modeles/Shrimp_v1_L3.123c1f00fa2d-d886-4c6f-84fb-f026c668c3bf/Shrimp_v1_L3.123c1f00fa2d-d886-4c6f-84fb-f026c668c3bf/10048_Shrimp_v1_L3.mtl"></a-asset-item>
+
+    </a-assets>
+
+
+    <!-- shark -->
+    <a-entity position="-0.5 0.5 -1" scale="0.01 0.01 0.01" rotation="-90 0 0"
+    obj-model="obj: #obj; mtl: #mtl"></a-entity>
+    <a-entity position="0 1.3 -1.5" scale="0.005 0.005 0.005" rotation="-90 0 0"
+    obj-model="obj: #obj; mtl: #mtl"></a-entity>
+
+    <!-- poisson -->
+    <a-entity position="1 0.5 -0.5" scale="0.3 0.3 0.3" rotation="-90 0 0"
+    obj-model="obj: #poisson; mtl: #poisson2" ></a-entity>
+    <a-entity position="1.3 1.5 1" scale="0.3 0.3 0.3" rotation="-90 0 0"
+    obj-model="obj: #poisson; mtl: #poisson2" ></a-entity>
+    <a-entity position="-1.2 0.2 1.5" scale="0.3 0.3 0.3" rotation="-90 0 0"
+    obj-model="obj: #poisson; mtl: #poisson2" ></a-entity>
+
+    <!-- poissonviolet  -->
+    <a-entity position="-1 1.5 -1" scale="0.7 0.7 0.7" rotation="-90 0 0"
+    obj-model="obj: #poissonviolet; mtl: #poissonviolet2"></a-entity>
+    <a-entity position="1.9 0.7 -0.1" scale="0.7 0.7 0.7" rotation="-90 0 0"
+    obj-model="obj: #poissonviolet; mtl: #poissonviolet2"></a-entity>
+    <a-entity position="-0.8 0.3 -0.1" scale="0.7 0.7 0.7" rotation="-90 0 -90"
+    obj-model="obj: #poissonviolet; mtl: #poissonviolet2"></a-entity>
+
+    <!-- dauphin -->
+    <a-entity position="0.7 0.3 1.5" scale="0.01 0.01 0.01" rotation="-90 -80 0"
+    obj-model="obj: #dauphin; mtl: #dauphin2"></a-entity>
+    <a-entity position="0.01 0 1.5" scale="0.008 0.008 0.008" rotation="-90 -80 0"
+    obj-model="obj: #dauphin; mtl: #dauphin2"></a-entity>
+
+    <!-- crabe -->
+    <a-entity position="-1 0.1 -0.3" scale="0.03 0.03 0.03" rotation="-90 0 0"
+    obj-model="obj: #crabe; mtl: #crabe2"></a-entity>
+    <a-entity position="1 0.1 1.3" scale="0.02 0.02 0.02" rotation="-90 0 -90"
+    obj-model="obj: #crabe; mtl: #crabe2"></a-entity>
+    <a-entity position="-0.6 0.1 1.7" scale="0.02 0.02 0.02" rotation="-90 0 0"
+    obj-model="obj: #crabe; mtl: #crabe2"></a-entity>
+    <a-entity position="-1.4 0.1 0.8" scale="0.02 0.02 0.02" rotation="-90 0 0"
+    obj-model="obj: #crabe; mtl: #crabe2"></a-entity> 
+    <a-entity position="-1.8 0.1 0.2" scale="0.02 0.02 0.02" rotation="-90 0 -90"
+    obj-model="obj: #crabe; mtl: #crabe2"></a-entity>
+
+   <!-- poisson jaune -->
+   <a-entity position="1 1 -1.4" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #poissonjaune; mtl: #poissonjaune2" ></a-entity>
+   <a-entity position="1 1.6 0.4" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #poissonjaune; mtl: #poissonjaune2" ></a-entity>
+   <a-entity position="-1 1.2 -1.4" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #poissonjaune; mtl: #poissonjaune2" ></a-entity>
+   <a-entity position="-1.2 0.9 1.6" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #poissonjaune; mtl: #poissonjaune2" ></a-entity>
+
+   <!-- dechet -->
+   <a-entity position="1.9 0.1 0.3" scale="0.01 0.01 0.01" rotation="-90 -90 0"
+   obj-model="obj: #dechet; mtl: #dechet2"></a-entity>
+
+   <!-- tortue -->
+   <a-entity position="-0.3 0.8 0.4" scale="0.015 0.015 0.015" rotation="-90 0 0"
+   obj-model="obj: #tortue; mtl: #tortue2"></a-entity>
+   <a-entity position="-0.75 1.5 0.4" scale="0.01 0.01 0.01" rotation="-90 0 0"
+   obj-model="obj: #tortue; mtl: #tortue2"></a-entity>
+   <a-entity position="-1.2 1.2 0.4" scale="0.007 0.007 0.007" rotation="-90 0 0"
+   obj-model="obj: #tortue; mtl: #tortue2"></a-entity>
+
+   <!-- crevette -->
+    <a-entity position="1 0.5 -1" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #crevette; mtl: #crevette2" ></a-entity>
+   <a-entity position="1 0.5 -1" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #crevette; mtl: #crevette2" ></a-entity>
+   <a-entity position="0.8 1.5 -1.5" scale="0.03 0.03 0.03" rotation="-90 0 -90"
+   obj-model="obj: #crevette; mtl: #crevette2" ></a-entity>
+   <a-entity position="1.5 0.5 1" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #crevette; mtl: #crevette2" ></a-entity>
+   <a-entity position="0.1 0.5 -0.4" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #crevette; mtl: #crevette2" ></a-entity>
+   <a-entity position="1.6 1.6 -0.4" scale="0.02 0.02 0.02" rotation="-90 0 0"
+   obj-model="obj: #crevette; mtl: #crevette2" ></a-entity>
+  
+
+ 
+    <!-- contours -->
+    <a-plane position="0 1 -2" rotation="-0 0 0" width="4" height="2" src="#eau" side="double"></a-plane>
+    <a-plane position="0 1 2" rotation="-0 0 0" width="4" height="2" src="#eau" side="double"></a-plane>
+    <a-plane position="-2 1 0" rotation="-0 -90 0" width="4" height="2" src="#eau" side="double"></a-plane>
+    <a-plane position="2 1 0" rotation="-0 -90 0" width="4" height="2" src="#eau" side="double"></a-plane>
+    
+    <!-- plafond -->
+    <a-plane position="0 2 0" rotation="-90 0 0" width="4" height="4" src="#ciel" side="double"></a-plane>
+    <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" src="#sable" side="double"></a-plane>
+      
+    <a-sky color="#ECECEC"></a-sky>
+
+  </a-scene>
+  
+  </body>
+</html>
